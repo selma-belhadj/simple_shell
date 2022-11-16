@@ -118,7 +118,8 @@ int prompt(char **en)
 			free(n_command);
 			continue;
 		}
-		token = NULL;token = _str_tok(command, " "); /*token user cmd*/
+		token = NULL;
+		token = _str_tok(command, " ");/*token user cmd*/
 		if (n_command != NULL)
 			free(n_command);
 		exit_stat = built_in(token, env, command_line_no, NULL);
